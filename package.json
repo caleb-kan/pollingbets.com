@@ -17,7 +17,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://pollingbets.com",
+  "homepage": "http://pollingbets.com",
   "browserslist": {
     "production": [
       ">0.2%",
