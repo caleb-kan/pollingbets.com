@@ -13,7 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "react-scripts": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://caleb-kan.github.io/pollingbets.com"
+  "homepage": "https://pollingbets.com"
 }
