@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pollingbets.com/static/css/main.a447433e.css",
+    "main.js": "/pollingbets.com/static/js/main.a7c14eab.js",
+    "index.html": "/pollingbets.com/index.html",
+    "main.a447433e.css.map": "/pollingbets.com/static/css/main.a447433e.css.map",
+    "main.a7c14eab.js.map": "/pollingbets.com/static/js/main.a7c14eab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a447433e.css",
+    "static/js/main.a7c14eab.js"
+  ]
+}
