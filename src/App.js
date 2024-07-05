@@ -1,26 +1,28 @@
-// src/App.js
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import CreatePoll from './components/CreatePoll';
-import PollList from './components/PollList';
-import PollDetails from './components/PollDetails';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
+import { Box, Flex, Heading, Button, Container, Link } from '@chakra-ui/react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Feed from './components/Feed';
+import HostPoll from './components/HostPoll';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/create" element={<CreatePoll />} />
-        <Route path="/polls" element={<PollList />} />
-        <Route path="/poll/:id" element={<PollDetails />} />
-      </Routes>
-      <Footer />
-    </div>
+    <Router>
+      <Box>
+        <Flex bg="blue.500" p={4} color="white" alignItems="center" justifyContent="space-between">
+          <Heading size="lg">Polling Bets</Heading>
+          <Flex>
+            <Link href="/" color="white" mx={2}>Feed</Link>
+            <Link href="/host" color="white" mx={2}>Host a Poll</Link>
+          </Flex>
+        </Flex>
+        <Container mt={4}>
+          <Routes>
+            <Route path="/" element={<Feed />} />
+            <Route path="/host" element={<HostPoll />} />
+          </Routes>
+        </Container>
+      </Box>
+    </Router>
   );
 }
 
